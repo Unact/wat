@@ -1,0 +1,59 @@
+assuming http variables are in context
+
+
+if session is null or invalid
+then process login
+else renew session
+
+process submitt
+
+case command
+ process submit
+ process logoff
+ process menuitem
+ else make menu
+end
+
+
+redirect if it was post
+
+else respond with processed
+
+process:
+
+submit:
+
+ check if request is not null and valid
+
+ check is request isn't served yet
+
+ transform context into data request
+
+ request data put
+
+ add response 
+;
+
+logoff:
+
+ terminate session
+
+login:
+
+ validate credentials if any supplied
+
+ if credentials are valid
+ then register session
+ else construct auth form using credentials
+;
+
+menuitem:
+
+ request data
+  
+ add response to context
+
+ construct form using context and interface layout
+
+ transform form into user interface using standart
+;

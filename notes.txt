@@ -1,0 +1,15 @@
+/*  xmlelement(name html, xmlattributes ('http://www.w3.org/1999/xhtml' as xmlns),
+    xmlelement(name head,
+      xmlelement(name meta, xmlattributes ('Content-Type' as "Content-Type", 'text/html; charset=windows-1251' as "content")),
+      xmlelement(name link, xmlattributes ('shortcut icon' as rel, '/gallery_image/1' as href)),
+      xmlelement(name link, xmlattributes ('stylesheet' as rel, '/css/main' as href))
+    ),
+    xmlelement(name body,
+      xmlelement(name div, xmlattributes ('login' as "id")
+        xmlelement(name p, 'Для авторизации в системе введите имя и пароль, такие же как при запуске компьютера (ctrl+alt+del)'
+      )
+    )
+  )
+  ;
+*/
+ 
